@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="9Studio is a compact digital studio focused on websites, brand landing pages, and product experiences."
+  >
+  <title>9Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="#home">9Studio</a>
+        <div class="topbar-links">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">9studio.fun</p>
+          <h1>
+            为想法做一个
+            <span>干净、灵动、能上线</span>
+            的第一张门面。
+          </h1>
+          <p class="lead">
+            9Studio 是一个轻量数字工作室，专注于品牌落地页、静态官网与产品展示页面。
+            我们把复杂东西讲清楚，把第一版做漂亮，也把上线这件事做简单。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/buqun1994-sudo/9.9studio_web">View Repository</a>
+            <a class="button button-secondary" href="#services">Explore Sections</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <p class="card-label">Launch Snapshot</p>
+          <ul>
+            <li>Static site, zero backend dependency</li>
+            <li>Ready for GitHub Pages custom domain</li>
+            <li>Fast first screen and easy future edits</li>
+          </ul>
+          <div class="hero-card-footer">
+            <span class="status-dot"></span>
+            <span>Initial version ready to publish</span>
+          </div>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section section-grid" id="services">
+        <div class="section-intro">
+          <p class="section-kicker">Services</p>
+          <h2>先把首页做好，再把品牌长出来。</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-card">
+            <h3>品牌落地页</h3>
+            <p>适合新项目启动、活动上线、个人品牌展示，用一个页面说清楚你是谁、在做什么、下一步怎么联系。</p>
+          </article>
+          <article class="info-card">
+            <h3>静态官网</h3>
+            <p>部署简单、成本可控、加载稳定。非常适合展示型站点、工作室主页、产品介绍页与作品集。</p>
+          </article>
+          <article class="info-card">
+            <h3>产品呈现</h3>
+            <p>把功能罗列变成有节奏的叙事，把“看得懂”再推进到“想继续了解”。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section spotlight" id="work">
+        <div class="spotlight-copy">
+          <p class="section-kicker">Work Style</p>
+          <h2>不是堆素材，而是把信息组织成体验。</h2>
+          <p>
+            这个首版页面采用纯静态结构，后续你可以很容易替换为自己的文案、案例、截图和联系方式。
+            如果下一步你要扩成多页面，也可以在这个基础上继续长，不需要推翻重来。
+          </p>
+        </div>
+
+        <div class="metric-panel">
+          <div>
+            <strong>01</strong>
+            <span>Single-page structure for fast launch</span>
+          </div>
+          <div>
+            <strong>02</strong>
+            <span>Responsive layout for desktop and mobile</span>
+          </div>
+          <div>
+            <strong>03</strong>
+            <span>Custom domain ready with CNAME included</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="section-kicker">Contact</p>
+          <h2>站点已经有了，下一步就是把你的内容放进来。</h2>
+          <p>
+            目前这版适合作为 9Studio 的上线占位页。如果你愿意，我下一轮可以继续帮你补：
+            关于我们、服务报价、案例展示、联系表单入口，或者替你做成中文单页品牌官网。
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <a class="button button-primary button-full" href="https://github.com/buqun1994-sudo/9.9studio_web">
+            Open GitHub Repository
+          </a>
+          <p class="small-note">
+            Custom domain target:
+            <strong>9studio.fun</strong>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year">2026</span> 9Studio</span>
+      <span>Built for GitHub Pages</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
