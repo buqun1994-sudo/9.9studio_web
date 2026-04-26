@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="9.9 Studio 隐私与数据声明，说明磁贴启动器体验改进计划的数据收集范围、用途与关闭方式。"
+  >
+  <title>9.9 Studio 隐私与数据声明</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="simple-header">
+      <nav class="topbar">
+        <a class="brand" href="/">9Studio</a>
+        <div class="topbar-links">
+          <a href="/">Home</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="policy-page">
+      <article class="policy-document">
+        <p class="section-kicker">Privacy Statement</p>
+        <h1>9.9 Studio 隐私与数据声明</h1>
+        <p class="policy-updated">最后更新：2026年4月</p>
+
+        <p>你好，这里是 9.9 工作室。</p>
+
+        <p>
+          作为独立开发者，我深知桌面用户（尤其是喜欢折腾美化和效率工具的玩家）对隐私和后台联网有多么敏感。本着绝对透明的原则，我在这份声明里不讲法言法语，只讲清楚一件事：如果你开启了“体验改进计划”，我们的磁贴启动器到底在后台干了什么？
+        </p>
+
+        <h2>1. 我们如何收集数据？（极简快照机制）</h2>
+        <p>为了保证你电脑的绝对流畅，磁贴启动器不会实时监控你的每一次点击。</p>
+        <p>
+          如果你授权同意，应用仅会在每天首次启动的一段时间后，在后台默默生成一份极其轻量的“当前状态快照（Snapshot）”，并发送给我们的云端服务器。如果当天你没有修改过设置或大幅重排过磁贴，甚至连这一条快照都不会发送。
+        </p>
+
+        <h2>2. 快照里到底有什么？（我们收集什么）</h2>
+        <p>我们只关心启动器的“骨架”是否强壮：</p>
+        <ul>
+          <li><strong>运行环境：</strong>系统大版本号、应用版本号。</li>
+          <li><strong>匿名标识：</strong>一串随机生成的机器哈希值（用于统计留存率，我们无法通过它反查你的任何真实身份或硬件序列号）。</li>
+          <li><strong>布局规模：</strong>你的磁贴总数、分组数量、各尺寸磁贴比例（我们借此评估是否需要针对海量磁贴做内存优化）。</li>
+          <li><strong>功能偏好：</strong>你更喜欢 Mica 还是 Acrylic 材质？更常用“待办”还是“剪贴板”磁贴？</li>
+          <li><strong>稳定性：</strong>程序崩溃时的错误代码栈。</li>
+        </ul>
+
+        <h2>3. 我们绝对不会碰什么？（红线）</h2>
+        <p>你的电脑是你绝对的私人领域。我们的代码里没有任何读取以下信息的逻辑：</p>
+        <ul class="policy-redlines">
+          <li>❌ 绝不收集任何真实的个人文件绝对路径。</li>
+          <li>❌ 绝不收集你的个人身份信息、Steam 账号或社交平台数据。</li>
+          <li>❌ 绝不收集你自定义的磁贴标题或分组名称的原文（我们会将其转换为长度统计或单向哈希值）。</li>
+          <li>❌ 绝不收集你在“剪贴板”、“待办”或任何输入框内留下的文字内容。</li>
+        </ul>
+
+        <h2>4. 数据的存储与用途</h2>
+        <p>
+          所有收到的匿名数据仅存放在 9.9 工作室极其简陋的内部数据库中，仅用于我个人评估功能使用率及排查 Bug。
+        </p>
+        <p>这些数据绝不会被出售、共享或用于任何商业广告推送。</p>
+
+        <h2>5. 随时反悔的权利</h2>
+        <p>
+          如果你改变了主意，可以随时打开启动器的「设置」，关闭“体验改进计划”。
+        </p>
+        <p>
+          关闭的瞬间，程序会立刻切断所有上传逻辑，并在最后发送一条不带任何身份标识的“拒绝同意”计数，从此在你的后台保持绝对的沉默。
+        </p>
+
+        <p>感谢你给 9.9 工作室的一份信任。</p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

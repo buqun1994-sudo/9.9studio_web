@@ -301,6 +301,70 @@ a {
   font-size: 0.92rem;
 }
 
+.simple-header {
+  padding: 8px 0 28px;
+}
+
+.policy-page {
+  padding-bottom: 28px;
+}
+
+.policy-document {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 44px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: rgba(255, 252, 245, 0.82);
+  box-shadow: var(--shadow);
+}
+
+.policy-document h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4.6rem);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.policy-updated {
+  margin: 14px 0 32px;
+  color: var(--accent-deep);
+  font-weight: 800;
+}
+
+.policy-document h2 {
+  margin: 34px 0 12px;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.25;
+}
+
+.policy-document p,
+.policy-document li {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.policy-document p {
+  margin: 0 0 14px;
+}
+
+.policy-document ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.policy-document strong {
+  color: var(--text);
+}
+
+.policy-redlines {
+  list-style: none;
+  padding-left: 0;
+}
+
 @media (max-width: 920px) {
   .hero-grid,
   .spotlight,
@@ -312,7 +376,8 @@ a {
   .hero-copy,
   .hero-card,
   .section,
-  .contact-box {
+  .contact-box,
+  .policy-document {
     padding: 28px;
   }
 
